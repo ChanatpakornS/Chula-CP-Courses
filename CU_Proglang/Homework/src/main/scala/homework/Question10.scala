@@ -3,14 +3,14 @@ package homework
 object Question10 {
   def app(f1: (Int,Int) => Int, f2: (Int,Int) => Int, list:List[Int], alt: Boolean, acc: Int): Int = {
     if (list.isEmpty) return acc
-    if (alt) app(f1,f2, list.tail, false, f1(list.head, acc))
-    else app(f1,f2, list.tail, true, f2(list.head, acc))
+    if (alt) app(f1,f2, list.tail, !alt, f1(list.head, acc))
+    else app(f1,f2, list.tail, !alt, f2(list.head, acc))
   }
 
   def alternate(f1: (Int,Int) => Int, f2: (Int,Int) => Int, list:List[Int]):Int ={
     if (list.isEmpty) 0
     else if (list.length == 1) list.head
-    else app(f1,f2,list,true,0)
+    else app(f1,f2,list.tail,true,list.head)
   }
 
   def plus(x: Int , y: Int): Int = x + y
