@@ -3,7 +3,7 @@
 
 using namespace std;
 
-long long mod(long long x, long long n, long long k)
+long long mod(int x, int n, int k)
 {
     if (n == 0)
     {
@@ -12,7 +12,7 @@ long long mod(long long x, long long n, long long k)
     else
     {
         int c = mod(x, n / 2, k);
-        if (n % 2 == 1)
+        if (n % 2)
         {
             return (c * c * x) % k;
         }
