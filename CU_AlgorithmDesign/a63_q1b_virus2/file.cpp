@@ -1,23 +1,23 @@
 #include <iostream>
-#include <vector>
 #include <algorithm>
 #include <math.h>
 
 using namespace std;
 
-bool cv(const vector<int> &vec, int start, int stop)
+bool cv(int arr[], int start, int stop)
 {
-    if (stop - start == 2) return true;
-    int m = (start + stop)/2;
-    int a = 0, b= 0;
-    for (int i=start ; i < m ; ++i) {
-        a += vec[i];
+    if (start == stop - 2)
+    {
+        return arr[start] == 0 && arr[stop - 1] == 1;
     }
-    for (int i=m; i < stop ; ++i){
-        b += vec[i];
+
+    int m = (start + stop) >> 1;
+    int rev[m];
+    for (int i = start; i < m; ++i)
+    {
+        rev[i] = arr[m - 1 - i];
     }
-    if(abs(a - b) <= 1) return cv(vec, start, m) && cv(vec, m, stop);
-    return false; 
+    return (cv(rev, start, m) || cv(arr, start, m)) && cv(arr, m, stop);
 }
 
 int main()
@@ -25,15 +25,13 @@ int main()
     int n, k;
     cin >> n >> k;
     int p = 1 << k;
-    vector<int> virus(p);
+    int virus[p];
     for (int i = 0; i < n; ++i)
-    { 
+    {
         for (int j = 0; j < p; ++j)
         {
             cin >> virus[j];
         }
-        // for (auto &i : virus) cout << i << " ";
-        // cout << "\n";
         string res = cv(virus, 0, p) ? "yes\n" : "no\n";
         cout << res;
     }
