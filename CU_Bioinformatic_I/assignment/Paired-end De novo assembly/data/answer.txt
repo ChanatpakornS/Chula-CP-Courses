@@ -1,0 +1,53 @@
+>read_001
+CCGGGGGCCC      AGCCGGACAG
+>read_002
+CGCGCGGGTG      GCGCGGGCGG    
+>read_003
+ACCGCGCGCG      CCGGGCGCGG
+>read_004
+CGGGTGATTC      GGGCGGTGCG
+>read_005
+TGATTCCTCC      GGTGCGCCAG
+>read_006
+GGGCCCCCGG      GGACAGCGCG
+>read_007
+GGCCCGGCAC      GGGGGCCCCC
+>read_008
+CACGGTTGGA      CGCGGGTGAT
+>read_009
+GCAGCCCGTC      CCCGGCACCG
+>read_010
+GAAGGGGGGG      ATTCCTCCGG
+>read_011
+CCCGTCTTCA      GCACCGCGCG
+>read_012
+CGGCACCGCG      GCCCCCGGGC
+>read_013
+GGGGGGCCCG      CTCCGGGGGC
+>read_014
+TCCTCCGGGG      CGCCAGCCGG
+>read_015
+TCTTCACGGT      CGCGCGCGGG
+>read_016
+GTTGGAAGGG      GGTGATTCCT
+
+09 GCAGCCCGTC                   CCCGGCACCG
+11     CCCGTCTTCA               GCACCGCGCG
+15         TCTTCACGGT               CGCGCGCGGG
+08             CACGGTTGGA               CGCGGGTGAT
+16                 GTTGGAAGGG               GGTGATTCCT
+10                     GAAGGGGGGG               ATTCCTCCGG
+13                        GGGGGGCCCG                CTCCGGGGGC
+07                            GGCCCGGCAC                GGGGGCCCCC
+12                                CGGCACCGCG                GCCCCCGGGC
+03                                    ACCGCGCGCG                CCGGGCGCGG
+02                                        CGCGCGGGTG                GCGCGGGCGG
+04                                            CGGGTGATTC                GGGCGGTGCG
+05                                                TGATTCCTCC                GGTGCGCCAG
+14                                                    TCCTCCGGGG                CGCCAGCCGG
+01                                                        CCGGGGGCCC                AGCCGGACAG 
+06                                                            GGGCCCCCGG                GGACAGCGCG
+
+
+
+
