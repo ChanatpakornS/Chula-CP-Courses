@@ -1,0 +1,11 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_01.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_01.srcs/sim_1/new/testDflipflop.v,1724141265,verilog,,,,testDFlipFlop,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_01.srcs/sim_1/new/testShift.v,1724142449,verilog,,,,testShift,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_01.srcs/sim_1/new/tester.v,1724139105,verilog,,,,tester,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_01.srcs/sources_1/new/Dflipflop.v,1724141275,verilog,,Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_01.srcs/sim_1/new/testDflipflop.v,,Dflipflop,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_01.srcs/sources_1/new/fullAdder.v,1724137642,verilog,,Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_01.srcs/sim_1/new/tester.v,,fullAdder;fullAdder_noblock,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_01.srcs/sources_1/new/shift.v,1724141541,verilog,,Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_01.srcs/sim_1/new/testShift.v,,shiftA;shiftB,,,,,,,,
