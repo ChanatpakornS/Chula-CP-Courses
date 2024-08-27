@@ -1,0 +1,9 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab02.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab02.srcs/sources_1/new/ClockDivider.v,1724744234,verilog,,Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab02.srcs/sources_1/new/hexto7segment.v,,clockDiv,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab02.srcs/sources_1/new/hexto7segment.v,1724743598,verilog,,Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab02.srcs/sources_1/new/quadSevenSeg.v,,hexTo7Segment,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab02.srcs/sources_1/new/quadSevenSeg.v,1724743401,verilog,,Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab02.srcs/sources_1/new/system.v,,quadSevenSeg,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab02.srcs/sources_1/new/system.v,1724743463,verilog,,,,system,,,,,,,,
