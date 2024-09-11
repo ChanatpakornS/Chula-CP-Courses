@@ -1,0 +1,25 @@
+>reference_genome
+ATAGTGCCGTGGCCGCGGGACGGTACGGAGCCTATCCCCTCGCCAGCCGATTCTGCCACCCCGACGCACTGGCCGGGAGCCGTCGCTCGGGCGATGGCCG
+                                                               ACGCACTGGCTA 
+                                                       CCACCCCGACGC
+                                                                CGCACTGGCTAC
+                                   CCCCTCGCCAGC
+                                       TCGCCAGCCGAT
+                                                GATTCTGCCACC
+                                TATCCCCTCGCC
+                         CGGAGCCTATCC
+                        ACGGAGCCTATC
+                                                     TGCCACCCCGAC
+                                      CTCGCCAGCCGA
+                                                     TGCCACCCCGAC
+                                                      GCCACCCCGACG
+                                                 ATTCTGCCACCC
+                                                         CCCCGACGCACT
+                                  TCCCCTCGCCAG
+                        ACGGAGCCTATC
+                              CCTATCCCCTCG
+          GGCCGCGGGACG
+                                           CAGCCGATTCTG 21
+      CCGTGGCCGCGG
+                                     CCTCGCCAGCCG
+                             GCCTATCCCCTC
