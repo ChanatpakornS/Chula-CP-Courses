@@ -1,8 +1,10 @@
 file = open('/home/csap/Chula-CP-Courses/CU_Bioinformatic_I/assignment/Burrow_Wheeler_transformation/rosalind_ba9i.txt', 'r')
-y = file.read()
+y = file.readline().strip()
 
 #function
 def BWT(word) :
+    if(word[-1] != '$') : 
+        word += '$'
     n = len(word)
 
     reorder_keeper = []

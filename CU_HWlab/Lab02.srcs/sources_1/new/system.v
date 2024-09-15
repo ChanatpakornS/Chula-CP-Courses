@@ -24,18 +24,16 @@ module system(
     output [6:0] seg,
     output dp,
     output [3:0] an,
-    input clk
+    input clk,
+    input [15:0] sw,
+    input btnU,
+    input btnC
     );
     
 wire [3:0] num0;
 wire [3:0] num1;
 wire [3:0] num2;
 wire [3:0] num3;
-
-assign num0 = 4;
-assign num1 = 3;
-assign num2 = 2;
-assign num3 = 1;
    
 wire targetClk;
 wire an0, an1, an2, an3;
@@ -50,11 +48,30 @@ genvar c;
 
 generate for(c = 0; c < 18; c = c + 1)
     begin
-        clockDiv fdiv(tclk[c+1], tclk[c]);
+        ClockDivider fdiv(tclk[c+1], tclk[c]);
     end
 endgenerate
 
-clockDiv fdivTarget(targetClk, tclk[18]);
+ClockDivider fdivTarget(targetClk, tclk[18]);
+
+wire up0, up1, up2, up3, down0, down1, down2, down3;
+
+SinglePulser su0(up0, sw[1],targetClk);
+SinglePulser su1(up1, sw[3],targetClk);
+SinglePulser su2(up2, sw[5],targetClk);
+SinglePulser su3(up3, sw[7],targetClk);
+SinglePulser sd0(down0, sw[0],targetClk);
+SinglePulser sd1(down1, sw[2],targetClk);
+SinglePulser sd2(down2, sw[4],targetClk);
+SinglePulser sd3(down3, sw[6],targetClk);
+
+wire c0,c1,c2,c3;
+wire b0,b1,b3,b3;
+
+BCDCounter bcd0(num0, b0, c0, up0, down0, btnU|c3, btnC|b3, targetClk);
+BCDCounter bcd1(num1, b1, c1, up1|c0, down1|b0, btnU|c3, btnC|b3, targetClk);
+BCDCounter bcd2(num2, b2, c2, up2|c1, down2|b1, btnU|c3, btnC|b3, targetClk);
+BCDCounter bcd3(num3, b3, c3, up3|c2, down3|b2, btnU|c3, btnC|b3, targetClk);
 
 quadSevenSeg q7Seg(seg, dp, an0, an1, an2, an3, num0, num1, num2, num3, targetClk);
 

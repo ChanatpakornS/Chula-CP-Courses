@@ -5,7 +5,7 @@
 // 
 // Create Date: 08/27/2024 01:54:27 PM
 // Design Name: 
-// Module Name: clockDivider
+// Module Name: ClockDivider
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,9 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module clockDiv(
-    input tclk,
-    output tclkDiv
+module ClockDivider(
+    output tclkDiv,
+    input tclk
     );
     
     reg tclkDiv;
