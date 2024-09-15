@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_03/Lab_03.srcs/sources_1/new/SinglePulser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SinglePulser
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_03/Lab_03.srcs/sim_1/new/testSinglePulser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testSinglePulser
