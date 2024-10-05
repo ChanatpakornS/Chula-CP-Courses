@@ -1,13 +1,7 @@
-f = open(file='', mode='')
+with open ('test.txt','r') as f:
+    scan = [line.strip() for line in f]
+    print(scan)
 
-readFile = [line.strip() for line in f]
 
-f.close()
-
-# insert function here
-
-wfile_name = 'output.txt'
-
-wfile = open(wfile_name, 'w')
-
-wfile.write('...')
+with open('output.txt', 'w') as f:
+    f.close()
