@@ -1,69 +1,57 @@
 #include <iostream>
-#include <algorithm>
 #include <set>
+#include <vector>
+#include <algorithm>
 #include <map>
 
 using namespace std;
 
-void updateLeaderBoard(map<int, int> &itemId, set<pair<int, int>, greater<pair<int, int>>> &sale, int id, int amount)
-{
-    auto it = sale.find({itemId[id], id});
-    if (it != sale.end())
-    sale.erase(it);
-    itemId[id] += amount;
-    itemId.insert({itemId[id], id});
-}
-
-void checkNearlyGood(map<int, int> &itemId, set<pair<int, int>, greater<pair<int, int>>> &sale, int amount_checked)
-{
-    auto it = sale.lower_bound({amount_checked, 0});
-    if (it != sale.end()) {
-        if(it->first != 0 ) {
-            cout << it->second << endl;
-        } else {
-            cout << "NONEDDDD\n" << endl;
-        }
-    } else {
-        cout << "NONE\n" << endl;
-    }
-}
-
 int main()
 {
-    std::ios_base::sync_with_stdio(false);
+    ios_base::sync_with_stdio(false);
     cin.tie(0);
+    set<pair<int, int>, greater<pair<int, int>>> s;
+    map<int, int> m;
 
-    int N, M;
-    cin >> N >> M;
-
-    set<pair<int, int>, greater<pair<int, int>>> leaderBoard;
-    map<int, int> itemSale;
-
-    while (N--)
+    int n, ma;
+    cin >> n >> ma;
+    for (int i = 0; i < n; i++)
     {
-        int id;
-        cin >> id;
-        leaderBoard.insert({0, id});
-        itemSale[id] = 0;
+        int a;
+        cin >> a;
+        s.insert({0, a});
+        m[a];
     }
 
-    while (M--)
+    for (int i = 0; i < ma; i++)
     {
-        int op;
-        cin >> op;
-        if (op == 1)
+        int b;
+        cin >> b;
+        if (b == 1)
         {
-            int amount, itemId;
-            cin >> itemId >> amount;
-            updateLeaderBoard(itemSale, leaderBoard, itemId, amount);
+            int am, id;
+            cin >> id >> am;
+            if (m.count(id))
+            {
+                s.erase({m[id], id});
+                m[id] += am;
+                s.insert({m[id], id});
+            }
         }
-        else if (op == 2)
+        else if (b == 2)
         {
-            int checkAmount;
-            cin >> checkAmount;
-            checkNearlyGood(itemSale, leaderBoard, checkAmount);
+            int k;
+            cin >> k;
+            // cout << "\n-------\n";
+            // for (auto &x : s)
+            //     cout << x.first << ' ' << x.second << '\n';
+            // cout << "-------\n";
+            auto it = s.lower_bound({k, 0});
+            // cout << "this is : " << it->first << ' ' << it->second << '\n';
+            if (it == s.end() || it->first == 0)
+                cout << "NONE\n";
+            else
+                cout << it->second << '\n';
         }
     }
-
-    return 0;
 }
