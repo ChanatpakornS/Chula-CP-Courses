@@ -4,9 +4,20 @@
 using namespace std;
 void insert_into_sv(map<int,int> &v, int pos, int value) {
  //your code here  
-    auto it = v.insert(pos, value);
-    
+    auto it = v.lower_bound(pos);
+    vector<pair<int,int>> nv;
+    for(auto i=it ; i!=v.end(); i++){
+        nv.push_back({i->first + 1, i->second});
+    }
 
+    v.erase(it,);
+    v[pos] = value;)
+    auto nvit = nv.begin();
+    for(auto i=++it; i!=v.end(); i++) {
+        v[] = nvit->second;
+        nvit++;
+    }
+    v.insert(*(nv.end() - 1));
 }
 int main() {
  ios_base::sync_with_stdio(false);cin.tie(0);
