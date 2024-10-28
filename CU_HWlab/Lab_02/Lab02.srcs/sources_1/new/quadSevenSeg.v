@@ -34,8 +34,8 @@ module quadSevenSeg(
     input clk
     );
 
-reg [1:0] ns;
-reg [1:0] ps;
+reg [1:0] ns; //next state
+reg [1:0] ps; //previous state
 reg [3:0] dispEn;
 
 reg [3:0] hexIn;
@@ -44,7 +44,7 @@ assign  segment = segments;
 
 hexTo7Segment segDecode(segments, hexIn);
 assign dp = 1;
-assign {an3, an2, an1, an0} = ~dispEn;
+assign {an3, an2, an1, an0} = ~dispEn; //display Enable
 
 always @(posedge clk)
 begin

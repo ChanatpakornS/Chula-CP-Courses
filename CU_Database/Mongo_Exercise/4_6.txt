@@ -1,0 +1,37 @@
+db.getCollection('orders_w_lines').aggregate(
+  [
+    {
+      $group: {
+        _id: '$customer_id',
+        tot: { $sum: 1 }
+      }
+    },
+    { $sort: { tot: -1 } },
+    {
+      $group: {
+        _id: '$tot',
+        tcustomer: { $push: { _id: '$_id' } }
+      }
+    },
+    { $sort: { _id: -1 } },
+    { $limit: 1 },
+    {
+      $lookup: {
+        from: 'customer',
+        localField: 'tcustomer._id',
+        foreignField: 'customer_id',
+        as: 'tcustomer'
+      }
+    },
+    { $unwind: { path: '$tcustomer' } },
+    { $sort: { customer_name: 1 } },
+    {
+      $project: {
+        customer_id: '$tcustomer.customer_id',
+        customer_name: '$tcustomer.customer_name',
+        _id: 0
+      }
+    }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);

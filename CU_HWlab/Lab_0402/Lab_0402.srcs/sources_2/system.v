@@ -31,7 +31,7 @@ module system(
     input clk
     );
     
-    reg [3:0] num3,num2,num1,num0; // left to right
+    wire [3:0] num3,num2,num1,num0; // left to right
 
     wire an0,an1,an2,an3;
     assign an={an3,an2,an1,an0};
@@ -52,14 +52,6 @@ module system(
     
     quadSevenSeg q7seg(seg,dp,an0,an1,an2,an3,num0,num1,num2,num3,targetClk);
     
-    
-     reg [7:0]rom[31:0];
-    
-    initial $readmemb("rom.mem", rom);
-    
-    always @(posedge clk)
-    begin
-        {num3,num2,num1,num0} = {8'b00000000, rom[sw[4:0]]};
-    end 
+    Rom readRom({num3, num2, num1, num0}, sw[7:0], targetClk);
 
 endmodule

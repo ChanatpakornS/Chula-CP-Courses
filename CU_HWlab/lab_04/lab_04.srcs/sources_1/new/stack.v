@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+/*
 module Stack(
      output reg [7:0] addr , // Address
     output reg [7:0] dout, // Out
@@ -50,4 +50,39 @@ module Stack(
             mem[addr] = 0;
         end
     end
+endmodule
+*/
+
+module Stack (
+    output reg [7:0]dout,
+    output reg [7:0]addr,
+    input wire [7:0]din,
+    input wire wen,
+    input wire oen,
+    input wire reset,
+    input wire clk
+);
+
+    reg [7:0]mem[255:0];
+    
+    initial begin
+        dout = 0;
+        addr = 0;
+    end
+    
+    always @(posedge clk) begin
+        if(wen) begin
+            mem[addr] = din;
+            addr = addr + 1;
+        end
+        if(oen && addr > 0) begin
+            addr = addr - 1;
+            dout = mem[addr];
+        end
+        if(reset) begin
+            addr = 0;
+            mem[addr] = 0;
+        end
+    
+    end 
 endmodule

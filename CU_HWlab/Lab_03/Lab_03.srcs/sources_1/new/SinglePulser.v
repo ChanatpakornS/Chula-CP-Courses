@@ -22,7 +22,8 @@
 
 module SinglePulser(
         output reg outbtn,
-        input wire d, clock
+        input wire d,
+        input wire clk
     );
     
     reg state;
@@ -30,22 +31,14 @@ module SinglePulser(
     initial state = 0;
     initial outbtn = 0;
     
-    always @(posedge clock)
+    always @(posedge clk)
         begin
+        outbtn = 0;
             case({d,state})
-                2'b10 :
-                    begin
-                        outbtn = 1;
-                        state = 1;
-                    end 
-                2'b11 : 
-                    begin
-                        outbtn = 0;
-                    end
-                2'b01 : 
-                    begin
-                        state = 0;
-                    end                     
+                2'b00 : ;
+                2'b10 : begin outbtn = 1;state = 1;end 
+                2'b11 : outbtn = 0;
+                2'b01 : state=0;                                      
             endcase
         end
 endmodule

@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Oct  1 13:02:20 2024
-# Process ID: 23728
+# Start of session at: Mon Oct  7 21:58:32 2024
+# Process ID: 17744
 # Current directory: Z:/home/csap/Chula-CP-Courses/CU_HWlab/lab_04/lab_04.runs/synth_1
 # Command line: vivado.exe -log system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
 # Log file: Z:/home/csap/Chula-CP-Courses/CU_HWlab/lab_04/lab_04.runs/synth_1/system.vds
@@ -17,8 +17,8 @@
 # CPU Physical cores:24
 # CPU Logical cores :32
 # Host memory       :16779 MB
-# Swap memory       :13421 MB
-# Total Virtual     :30201 MB
-# Available Virtual :12488 MB
+# Swap memory       :14495 MB
+# Total Virtual     :31275 MB
+# Available Virtual :9573 MB
 #-----------------------------------------------------------
 source system.tcl -notrace

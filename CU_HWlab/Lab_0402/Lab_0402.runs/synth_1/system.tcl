@@ -78,6 +78,7 @@ read_verilog -library xil_defaultlib {
   Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_0402/Lab_0402.srcs/sources_2/ClockDivider.v
   Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_0402/Lab_0402.srcs/sources_2/hexto7segment.v
   Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_0402/Lab_0402.srcs/sources_2/quadSevenSeg.v
+  Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_0402/Lab_0402.srcs/sources_1/new/rom.v
   Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_0402/Lab_0402.srcs/sources_2/system.v
 }
 OPTRACE "Adding files" END { }

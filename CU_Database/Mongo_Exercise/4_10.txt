@@ -1,0 +1,15 @@
+db.getCollection('product').aggregate(
+  [
+    {
+      $match: {
+        $or: [
+          { product_color: { $regex: 'White' } },
+          { product_color: { $regex: 'white' } }
+        ]
+      }
+    },
+    { $sort: { product_id: 1 } },
+    { $project: { _id: 0, product_price: 0 } }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);

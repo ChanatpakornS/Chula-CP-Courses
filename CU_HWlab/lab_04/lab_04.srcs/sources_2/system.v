@@ -57,6 +57,6 @@ module system(
     singlePulser(pop, btnC, targetClk);
     singlePulser(reset, btnD, targetClk);
     
-    Stack stack({num1,num0},{num3,num2},sw[7:0],pop,targetClk,push,reset);
+    Stack stack({num3,num2},{num1,num0},sw[7:0],push,pop,reset,targetClk);
 
 endmodule

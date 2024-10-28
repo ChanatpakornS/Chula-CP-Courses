@@ -20,17 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module ClockDivider(
-    output tclkDiv,
+module clockDiv(
+    output reg tclkDiv,
     input tclk
     );
-    
-    reg tclkDiv;
     
     initial
     begin 
         tclkDiv = 0;
-    end;
+    end
     
     always @(posedge tclk)
     begin

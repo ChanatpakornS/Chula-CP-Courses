@@ -1,0 +1,15 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sim_1/new/tester1.v,1729577446,verilog,,,,tester1,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sim_1/new/tester2.v,1729580029,verilog,,,,tester2,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sources_1/new/adder.v,1729580195,verilog,,Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sources_1/new/alu.v,,adder,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sources_1/new/alu.v,1729583400,verilog,,Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sources_1/new/control.v,,alu,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sources_1/new/control.v,1729583154,verilog,,Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sources_1/new/extender.v,,control,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sources_1/new/extender.v,1729580275,verilog,,Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sources_1/new/memory.v,,extender,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sources_1/new/memory.v,1729582774,verilog,,Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sources_1/new/mux2_1.v,,memory,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sources_1/new/mux2_1.v,1729580379,verilog,,Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sources_1/new/nanocpu.v,,mux2_1,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sources_1/new/nanocpu.v,1729582974,verilog,,Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sources_1/new/regfile.v,,nanocpu,,,,,,,,
+Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sources_1/new/regfile.v,1729580359,verilog,,Z:/home/csap/Chula-CP-Courses/CU_HWlab/Lab_05/Lab_05.srcs/sim_1/new/tester2.v,,regfile,,,,,,,,

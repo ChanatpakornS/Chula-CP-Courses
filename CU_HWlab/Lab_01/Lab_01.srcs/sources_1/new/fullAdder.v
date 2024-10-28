@@ -20,20 +20,17 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module fullAdder(
+    output reg cout,
+    output reg s,
     input a,
     input b,
-    input cin,
-    output cout,
-    output s
+    input cin
     );
     
-    reg cout;
-    reg s;
-    
-always @(a or b or cin)
-    begin
-        {cout, s} = a+b+cin ;
-    end
+    always @(a or b or cin)
+        begin
+            {cout, s} = a+b+cin ;
+        end
 endmodule
 
 module fullAdder_noblock(
@@ -43,9 +40,6 @@ module fullAdder_noblock(
     output cout,
     output s
     );
-    
-//    reg cout;
-//    reg s;
     
     assign {cout, s} = a+b+cin;
     

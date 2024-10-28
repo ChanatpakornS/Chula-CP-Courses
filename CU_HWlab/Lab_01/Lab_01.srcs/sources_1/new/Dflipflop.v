@@ -21,13 +21,11 @@
 
 
 module Dflipflop(
-    output q,
+    output reg q,
     input clock,
     input nreset,
     input d
     );
-    
-reg q;
 
 always @(posedge clock , nreset)
     begin

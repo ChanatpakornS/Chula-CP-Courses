@@ -21,11 +21,10 @@
 
 
 module hexTo7Segment(
-        output [6:0] segments,
+        output reg [6:0] segments, //outputs the segments of anode common of 7segment display
         input [3:0] hex
     );
-    
-    reg [6:0] segments;
+   
     // 7-segment encoding
 //      0
 //     ---

@@ -1,0 +1,22 @@
+db.getCollection('customer').aggregate(
+  [
+    {
+      $lookup: {
+        from: 'orders_w_lines',
+        localField: 'customer_id',
+        foreignField: 'customer_id',
+        as: 'orders_data'
+      }
+    },
+    { $match: { orders_data: { $size: 0 } } },
+    { $sort: { customer_id: 1 } },
+    {
+      $project: {
+        customer_id: '$customer_id',
+        customer_name: '$customer_name',
+        _id: 0
+      }
+    }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);
