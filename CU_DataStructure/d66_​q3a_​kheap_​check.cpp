@@ -11,9 +11,9 @@ int main() {
     int l, r;
     while(m--) {
         cin >> n >> k;
+        int mData[n];   
         l = 0;
         r = 0;
-        vector<int> mData(n);
         for(int i=0 ; i < n; i++) {
             cin >> mData[i];
         }
@@ -21,9 +21,9 @@ int main() {
         while(con && l < n) {
             l = k*l + 1;
             r = k*r + k;
-            r = (n < r) ? n-1 : r;
+            r = (n-1 < r) ? n-1 : r;
             for(int i=l; i <= r ;++i) {
-                if(mData[i] > mData[(i-1)/k]) {
+                if(i < n && mData[i] > mData[(i-1)/k]) {
                     con = false;
                     break;
                 }
