@@ -1,7 +1,9 @@
-with open('/Users/joshxi/Documents/Chula-CP-Courses/CU_Bioinformatic_I/assignment/Inverse_Burrow_wheeler_transformation/rosalind_ba9j.txt') as f:
-    word = f.readline().strip()
+# with open('/Users/joshxi/Documents/Chula-CP-Courses/CU_Bioinformatic_I/assignment/Inverse_Burrow_wheeler_transformation/rosalind_ba9j.txt') as f:
+#     word = f.readline().strip()
 
-f.close()
+# f.close()
+
+word = 'engineer$'
 
 def inverseBWT(word) :
 
@@ -16,5 +18,7 @@ def inverseBWT(word) :
 
 res = inverseBWT(word)
 
-with open('output.txt', 'w') as f:
-    f.write(res)
+print(res)
+
+# with open('output.txt', 'w') as f:
+#     f.write(res)

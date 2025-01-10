@@ -1,5 +1,10 @@
-file = open('/home/csap/Chula-CP-Courses/CU_Bioinformatic_I/assignment/Burrow_Wheeler_transformation/rosalind_ba9i.txt', 'r')
-y = file.readline().strip()
+# file = open('/home/csap/Chula-CP-Courses/CU_Bioinformatic_I/assignment/Burrow_Wheeler_transformation/rosalind_ba9i.txt', 'r')
+# y = file.readline().strip()
+
+# y = 'computer'
+y = 'rngeiene$'
+
+CCAGGCUGAGGUAGUAGUUUGUACAGUUUGAGGGUCUAUGAUACCACCCGGUACAGGAGAUAACUGUACAGGCCACUGCCUUGCCAGG
 
 #function
 def BWT(word) :
@@ -22,6 +27,7 @@ def BWT(word) :
 
 res = BWT(y)
 
-wf = 'output.txt'
-writeFile = open(wf, 'w')
-writeFile.write(res)
+print(res)
+# wf = 'output.txt'
+# writeFile = open(wf, 'w')
+# writeFile.write(res)
