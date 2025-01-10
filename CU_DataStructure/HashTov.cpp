@@ -1,0 +1,33 @@
+#include <vector>
+#include <iostream>
+#include <unordered_map>
+
+using namespace std;
+
+void hash_to_vector(unordered_map<int,string> hash, vector<int> &key, vector<string> &value) {
+  unordered_map<int,string>::iterator it = hash.begin();
+  for( unsigned i = 0; i < hash.bucket_count(); ++i) {
+    for ( auto local_it = hash.begin(i); local_it!= hash.end(i); ++local_it ){
+      key.push_back(local_it->first);
+      value.push_back(local_it->second);
+    }
+  }
+}
+
+int main() {
+  int n;
+  cin >> n;
+  unordered_map<int,string> hash;
+  while (n--) {
+    int a;
+    string st;
+    cin >> a >> st;
+    hash[a] = st;
+  }
+
+  vector<int> k;
+  vector<string> v;
+  hash_to_vector(hash,k,v);
+  for (auto &x : k) cout << x << " "; cout << endl;
+  for (auto &x : v) cout << x << " "; cout << endl;
+}
